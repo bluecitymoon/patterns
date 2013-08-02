@@ -1,6 +1,9 @@
 package patterns.command;
 
-public class TVOffCommand implements Command {
+import java.io.Serializable;
+import java.util.concurrent.Callable;
+
+public class TVOffCommand implements Command, Serializable {
 	private TV tv;
 	
 	public TV getTv() {
