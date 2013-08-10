@@ -15,7 +15,7 @@ public class PaidState implements AutoSellerState {
 
 		System.out.println("GOOD : you got your ticket.");
 		int count = autoSeller.getCount();
-		if (count == 0) {
+		if (count == 1) {
 			autoSeller.setAutoSellerState(autoSeller.soldOutState);
 			System.out.println("Warnning : ticket is sold out.");
 		} else {

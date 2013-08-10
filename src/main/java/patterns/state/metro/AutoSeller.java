@@ -11,7 +11,7 @@ public class AutoSeller {
 	
 	private  int count;
 	
-	public AutoSeller(int count) {
+	public AutoSeller() {
 		super();
 		waitingForSelectTicketState = new WaitingForSelectTicketState();
 		ticketSelectedState = new TicketSelectedState();

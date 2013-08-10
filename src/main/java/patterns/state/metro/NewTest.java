@@ -8,7 +8,12 @@ public class NewTest {
 	public static void main(String[] args) {
 
 		//select -> paid -> got ticket
-		AutoSeller autoSeller = new AutoSeller(2);
+		AutoSeller autoSeller = new AutoSeller();
+		autoSeller.setCount(2);
+		autoSeller.selectTicket();
+		autoSeller.insertCoin();
+		autoSeller.getMyTicket();
+		
 		autoSeller.selectTicket();
 		autoSeller.insertCoin();
 		autoSeller.getMyTicket();
