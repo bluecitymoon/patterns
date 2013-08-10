@@ -1,7 +1,7 @@
 package patterns.command;
 
 public class TVOncommand implements Command {
-	TV tv;
+	private TV tv;
 	public void execute() {
 		tv.on();
 	}
